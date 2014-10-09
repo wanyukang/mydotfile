@@ -1,9 +1,16 @@
 [user]
-    name = Mark Nichols
-    email = mark@zanshin.net
+    name = wanyukang
+    email = wanyukang@yongche.com
+
+[user]
+    name = wanyukang
+    email = 36562273@qq.com
+
+[gitlab]
+    user = wanyukang
 
 [github]
-    user = zanshin
+    user = wanyukang
 
 [color]
     ui = auto

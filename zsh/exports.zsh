@@ -37,6 +37,28 @@ export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+#JAVA
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home;
+export PATH=${PATH}:$JAVA_HOME;
+
+#Android env
+export ANDROID_HOME=/Users/wanyukang/dev/adt-bundle-mac-x86_64-20140321/sdk;
+export ANDROID_HOME_TOOLS=/Users/wanyukang/dev/adt-bundle-mac-x86_64-20140321/sdk/tools;
+export ANDROID_HOME_PLATFORM_TOOLS=/Users/wanyukang/dev/adt-bundle-mac-x86_64-20140321/sdk/platform-tools;
+export ANDROID_BUILD_TOOLS=/Users/wanyukang/dev/adt-bundle-mac-x86_64-20140321/sdk/build-tools/19.0.1;
+export PATH=${PATH}:$ANDROID_HOME;
+export PATH=${PATH}:$ANDROID_HOME_TOOLS;
+export PATH=${PATH}:$ANDROID_HOME_PLATFORM_TOOLS;
+export PATH=${PATH}:$ANDROID_BUILD_TOOLS;
+
+#OCLint
+export OCLINT_HOME=/Users/wanyukang/dev/oclint/oclint-0.9.dev.5dba345;
+export PATH=$OCLINT_HOME/bin:$PATH;
+
+#scan-build
+export CHECKER_HOME=/Users/wanyukang/dev/clang/checker-276;
+export PATH=$CHECKER_HOME:$PATH;
+
 # Virtual Environment Stuff
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Projects/django
