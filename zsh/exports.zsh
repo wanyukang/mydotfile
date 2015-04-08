@@ -7,9 +7,9 @@ export PATH=$PATH:/usr/local/sbin:$HOME/bin
 typeset -U PATH
 
 # Set default console Java to 1.6
-if [[ $IS_MAC -eq 1 ]]; then
-    export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
-fi
+# if [[ $IS_MAC -eq 1 ]]; then
+#     export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
+# fi
 
 # Setup terminal, and turn on colors
 export TERM=xterm-256color
@@ -38,7 +38,12 @@ export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 #JAVA
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home;
+# JDK 1.6
+# export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home;
+# JRE 1.7
+# export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home;
+# JDK 1.7(include JRE 1.7)
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home;
 export PATH=${PATH}:$JAVA_HOME;
 
 #Android env
@@ -58,6 +63,11 @@ export PATH=$OCLINT_HOME/bin:$PATH;
 #scan-build
 export CHECKER_HOME=/Users/wanyukang/dev/clang/checker-276;
 export PATH=$CHECKER_HOME:$PATH;
+
+#Docker
+export DOCKER_TLS_VERIFY=1;
+export DOCKER_HOST=tcp://192.168.59.103:2376;
+export DOCKER_CERT_PATH=/Users/wanyukang/.boot2docker/certs/boot2docker-vm;
 
 # Virtual Environment Stuff
 export WORKON_HOME=$HOME/.virtualenvs
