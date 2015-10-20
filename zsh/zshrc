@@ -15,3 +15,6 @@ source  ${HOME}/.dotfiles/z/z.sh
 source ~/.bash_profile
 
 #oclint
+
+# OPAM configuration
+. /Users/wanyukang/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

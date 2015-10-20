@@ -57,12 +57,16 @@ export PATH=${PATH}:$ANDROID_HOME_PLATFORM_TOOLS;
 export PATH=${PATH}:$ANDROID_BUILD_TOOLS;
 
 #OCLint
-export OCLINT_HOME=/Users/wanyukang/dev/oclint/oclint-0.9.dev.5dba345;
+#export OCLINT_HOME=/Users/wanyukang/dev/oclint/oclint-0.9.dev.5dba345;
+export OCLINT_HOME=/Users/wanyukang/dev/oclint/oclint-0.9.dev.02251e4;
 export PATH=$OCLINT_HOME/bin:$PATH;
 
 #scan-build
 export CHECKER_HOME=/Users/wanyukang/dev/clang/checker-276;
 export PATH=$CHECKER_HOME:$PATH;
+
+#infer
+export PATH=/Users/wanyukang/git/infer/infer/bin:$PATH;
 
 #Docker
 export DOCKER_TLS_VERIFY=1;
