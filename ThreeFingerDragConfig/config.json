@@ -1,0 +1,11 @@
+{
+	"Allow releasing fingers and restarting drag without releasing tthe click": true,
+	"Delay before click release (ms)": 100,
+	"Enable three finger mouse move": true,
+	"Mouse Speed": 80,
+	"Mouse acceleration": 0,
+	"Start drag mouse move threshold": 100,
+	"End drag mouse move threshold": 10,
+	"Limit the maximum allowed distance the finger can be moved at once": 0,
+	"Average cursor movement": 1
+}
